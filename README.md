@@ -1,36 +1,99 @@
-# Teste Front-end - Amil
-Projeto de teste para seleção de candidatos(as) a desenvolvedor(a) Front-end na Amil.
+# Documentação - Teste Front-end - Amil
 
-Este teste contém dois desafios:
-- O primeiro serve para avaliar seu **HTML**, **CSS**, semântica, boas práticas, etc.  
-- O segundo para avaliar o seu **JavaScript**.  
+#### Informações sobre o candidato
+<pre>
+nome: Danilo Agostinho
+email: danilodev.silva@gmail.com
+twitter: @danilodev
+github: DaniloAgostinho
+</pre>
 
-## Instruções
-Faça um fork do projeto, realize seu teste e ao finalizar, solicite um pull request.
+# Rodando o projeto
+Você precisara do **npm** para instalar as Dependências, caso não o possua em sua máquina, você precisa baixar e instalar o **nodejs**, acesse o link: [arquivo](https://nodejs.org/en/).
 
-## Desafio n° 1
-1.- Criar o HTML/CSS de acordo com o layout base fornecido no diretório [layout](./layout).
+1. Faça um Fork deste projeto
+```
+https://github.com/DaniloAgostinho/frontend-test-1.git
+```
+2. Entre no Diretorio do projeto
+```
+cd /frontend-test
+```
 
-No arquivo [primeiro-desafio.md](./primeiro-desafio.md) se encontram todos os dados necessários para que você possa fazer esta parte do teste.
+3. Instale as Dependências rodando
+```
+npm install
+```
 
-### Observações
-- Vamos avaliar o seu nível de conhecimento em HTML5, CSS3, semântica, webstandars e boas práticas. Não se esqueça de seguir o básico sobre usabilidade e acessibilidade.
-- Você pode utilizar pré-processadores (nós usamos `Sass`), _task manager_ (nós usamos Grunt) e qualquer ferramenta que otimize o seu trabalho. Não esqueça de criar um README com as instruções para fazer tudo funcionar.
-- Pode seguir qualquer code standard/guide/style ou somente bom senso, mas seja consistente em sua decisão.
-- Não é permitido o uso de frameworks CSS como Bootstrap, Semantic UI, Foundation ou similares e nem o uso de geradores como Yeoman. Nós queremos ver o **seu** código.
-- Não tenha pressa! Iremos avaliar a qualidade do seu código. Faça seu melhor!.
+**PROBLEMAS DE PERMISSÃO**
 
-## Desafio n° 2
-1.- Criar um formulário com 3 campos para cadastro de contatos   
-2.- Mostrar os contatos cadastrados em uma lista na mesma página  
+Caso esteja utilizando sistemas Unix, ou similares, rode o seguinte comando:
 
-No arquivo [segundo-desafio.md](./segundo-desafio.md) se encontram todos os dados e regras necessárias para que possa fazer esta parte do teste.
+```
+sudo npm install
+```
 
-### Observações
-- Vamos avaliar o seu nível de conhecimento com `JavaScript`, funcionamento adequado do formulário, qualidade de código e boas práticas.
-- Pode seguir qualquer code standard/guide/style ou somente bom senso, mas seja consistente em sua decisão.
-- Somente é permitido o uso de JavaScript, jQuery ou AngularJS.
-- Não precisa aplicar nenhum layout, mas esperamos que o seu HTML seja no mínimo semântico e acessível.
-- Capriche no código. A ideia é que você invista aproximadamente 1 hora nesta parte do teste.
+### Diretorio de arquivos
 
-*Boa sorte!*
+<pre>
+frontend-test-1 (dir)
+  |_ GruntFile
+  |_ packge.json
+  |_ primeiro-desafio.md
+  |_ segundo-desafio.md
+  |_ assets(dir)
+     |_ js (dir)
+        | _ _ main.js
+     |_ sass (dir)
+        | _ _ style.scss
+  |_ build (dir)
+     |_ css (dir)
+        | _ _ style.min.css
+     |_ js (dir)
+           | _ _ main.min.js
+
+</pre>
+
+### Grunt
+
+Este projeto utiliza **Gruntjs**, você precisa te-ô instalado globalmente rode o comando:
+
+```
+npm install -g grunt-cli
+```
+
+#### Plugins usados
+
+- (grunt-contrib-uglify) Minifica os scripts
+- (grunt-contrib-sass) Converte/minifica as folhas de estilo
+- (grunt-contrib-watch) Assisti a mudanças nos arquivos
+- (grunt-contrib-clean) Limpa a pasta **build**
+
+#### Tarefas
+Minifica os arquivos **JavaScript** e **Css** e cria a pasta **build** com os arquivos de produção.
+```
+grunt prod
+```
+
+Limpa a pasta a pasta build
+```
+grunt c
+```
+
+### Testeando o projeto em vários Dispositivos
+
+Em na pasta buil do projeto:
+
+```
+cd build/
+
+```
+
+Depois rode o seguinte:
+
+```
+browser-sync start --server --files "index.html", "css/*min.css", "js/*.min.js"
+```
+
+
+*Obrigado!*
