@@ -1,15 +1,10 @@
 # Documentação - Teste Front-end - Amil
 
 #### Informações sobre o candidato
-<pre>
-nome: Danilo Agostinho
-email: danilodev.silva@gmail.com
-twitter: @danilodev
-github: DaniloAgostinho
-</pre>
+<pre>nome: Danilo Agostinhoemail: danilodev.silva@gmail.comtwitter: @danilodevgithub: DaniloAgostinho</pre>
 
 # Rodando o projeto
-Você precisara do **npm** para instalar as Dependências, caso não o possua em sua máquina, você precisa baixar e instalar o **nodejs**, acesse o link: [arquivo](https://nodejs.org/en/).
+Você precisara do **npm** para instalar as Dependência, caso não o possua em sua máquina, você precisa baixar e instalar o **nodejs**, acesse o link: [ofcial](https://nodejs.org/en/).
 
 1. Faça um Fork deste projeto
 ```
@@ -27,7 +22,7 @@ npm install
 
 **PROBLEMAS DE PERMISSÃO**
 
-Caso esteja utilizando sistemas Unix, ou similares, rode o seguinte comando:
+Caso esteja utilizando sistemas Unix ou similares, rode o seguinte comando:
 
 ```
 sudo npm install
@@ -51,7 +46,6 @@ frontend-test-1 (dir)
         | _ _ style.min.css
      |_ js (dir)
            | _ _ main.min.js
-
 </pre>
 
 ### Grunt
