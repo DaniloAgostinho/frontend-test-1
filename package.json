@@ -23,5 +23,8 @@
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-copy-to": "0.0.12"
+  },
+  "dependencies": {
+    "compass": "^0.1.1"
   }
 }
