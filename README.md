@@ -86,7 +86,6 @@ Em na pasta buil do projeto:
 
 ```
 cd build/
-
 ```
 
 Depois rode o seguinte:
