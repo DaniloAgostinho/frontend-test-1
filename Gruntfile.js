@@ -7,7 +7,7 @@ module.exports = function( grunt ) {
         mangle : false
       },
 
-      JS : {
+      javascript : {
         files : {
           'build/js/main.min.js' : [ 'assets/js/main.js' ]
         }
@@ -44,10 +44,10 @@ module.exports = function( grunt ) {
        files : [
          'assets/js/**/*',
          'assets/sass/**/*',
-         'index.html'
+         'assets/**.html'
        ],
 
-       tasks : [ 'uglify', 'sass']
+       tasks : [ 'uglify', 'sass', 'copyto']
      }
    } // watch
 
@@ -64,7 +64,7 @@ module.exports = function( grunt ) {
 
 
   // Tarefas que serão executadas
-  grunt.registerTask( 'prod', [ 'uglify', 'sass', 'copyto', 'watch' ] );
-  grunt.registerTask( 'c', [ 'clean' ] );
+  grunt.registerTask( 'prod', ['clean', 'sass', 'copyto', 'watch' ] );
+  grunt.registerTask( 'gerar', ['sass'] );
 
 };
