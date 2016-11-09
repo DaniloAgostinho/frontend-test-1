@@ -1,0 +1,21 @@
+$grid-spaces: 10px; // espaçamento entre as colunas
+$grid-columns: 12; // Quantidade de colunas
+$grid-max: 1000px; // Tamanho do container
+//geração do grid
+@for $i from 1 through $grid-columns {
+    .grid-#{$i} {
+        width: 100% / $grid-columns * $i;
+    }
+}
+
+.container {
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+// Código básico das colunas do grid
+[class*="grid-"] {
+    float: left;
+    padding: 0 $grid-spaces;
+}
