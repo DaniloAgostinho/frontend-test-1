@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
       javascript : {
         files : {
-          'build/js/main.min.js' : [ 'assets/js/main.js' ]
+          'build/js/main.min.js' : [ 'dev/js/main.js' ]
         }
       }
     }, // uglify
@@ -20,7 +20,7 @@ module.exports = function( grunt ) {
       dist : {
         options : { style : 'compressed' },
         files : {
-          'build/css/style.min.css' : 'assets/sass/style.scss'
+          'build/css/style.min.css' : 'dev/sass/style.scss'
         }
       }
     }, // sass
@@ -28,7 +28,7 @@ module.exports = function( grunt ) {
     copyto: {
     stuff: {
       files: [
-        {cwd: 'assets/', src: ['index.html'], dest: 'build/', expand: true}
+        {cwd: 'dev/', src: ['index.html'], dest: 'build/', expand: true}
       ]
     }
   },
@@ -42,9 +42,9 @@ module.exports = function( grunt ) {
    watch : {
      dist : {
        files : [
-         'assets/js/**/*',
-         'assets/sass/**/*',
-         'assets/**.html'
+         'dev/js/**/*',
+         'dev/sass/**/*',
+         'dev/**.html'
        ],
 
        tasks : [ 'uglify', 'sass', 'copyto']
@@ -64,7 +64,7 @@ module.exports = function( grunt ) {
 
 
   // Tarefas que serão executadas
-  grunt.registerTask( 'prod', ['clean', 'sass', 'copyto', 'watch' ] );
+  grunt.registerTask( 'prod', ['clean', 'sass', 'copyto', 'uglify', 'watch' ] );
   grunt.registerTask( 'gerar', ['sass'] );
 
 };
