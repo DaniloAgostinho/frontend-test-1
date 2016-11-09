@@ -1,13 +1,13 @@
 footer {
-  width: 100%;
-  height: auto;
-  padding: 40px 0px;
-  background: $header;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background: $header;
 }
 
 .copy {
     width: 100%;
-    padding: 30px 0px 80px 0px;
+    padding: 30px 0 80px;
     background: $bordas-footer;
     border-bottom: 8px solid $rosa-padrao;
 
@@ -20,7 +20,5 @@ footer {
         font-weight: bold;
         line-height: 1.4;
         color: $textos;
-
     }
-
 }

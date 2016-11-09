@@ -1,38 +1,37 @@
 @import "_config";
 
 * {
-  @include clearFix();
-  -webkit-box-sizing: border-box;
+    @include clearFix();
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-
 body {
-  //color: $textos;
-  //background-color: $rosa-padrao;
-  font-family: 'Open Sans', sans-serif;
+    //color: $textos;
+    //background-color: $rosa-padrao;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .top-block {
-  border-top: 4px solid $orange-padrao;
+    border-top: 4px solid $orange-padrao;
     width: 100%;
     background: #eee;
     position: absolute;
     z-index: -99999;
     border-bottom: 1px solid #c8c7c7;
-    padding: 23px 0px;
+    padding: 23px 0;
 }
 
 button.btn {
     display: block;
     background: $orange-padrao;
-    border: 0px;
+    border: 0;
     width: 150px;
     font-weight: bold;
     font-size: 16px;
     color: #fff;
     height: 25px;
-    margin: 14px 0px;
+    margin: 14px 0;
     border-radius: 5px;
 }
