@@ -3,6 +3,23 @@ footer {
     height: auto;
     padding: 40px 0;
     background: $header;
+
+    h4 {
+      font-size: 20px;
+      color: #ddd;
+    }
+    h5 {font-weight: bold; padding: 20px 0px;}
+
+    a {
+      text-decoration: none;
+      line-height: 2.3;
+      font-size: 13px;
+    }
+}
+
+//footer
+.logo h4 {
+    padding-bottom: 30px;
 }
 
 .copy {
@@ -20,5 +37,43 @@ footer {
         font-weight: bold;
         line-height: 1.4;
         color: $textos;
+    }
+
+
+}
+
+.sub-footer {
+    padding: 60px 0px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+ul.nav-footer-left {
+    display: inline-flex;
+    a {
+        text-decoration: none;
+        float: left;
+        margin: 0px 10px;
+    }
+
+    li {
+      border-right: 1px solid #ccc;
+    }
+
+
+
+}
+
+ul.nav-footer-right {
+    display: inline-flex;
+    a {
+        text-decoration: none;
+        float: left;
+        margin: 0px 6px;
+    }
+
+    li {
+      border-right: 1px solid #ccc;
     }
 }
