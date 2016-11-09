@@ -1,7 +1,7 @@
 .wrapper {
     display: block;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 960px;
     padding-bottom: 80px;
 }
 
@@ -10,7 +10,7 @@
     height: auto;
     float: left;
     display: block;
-    padding: 12px 0px;
+    padding: 5px 0px;
     font-size: 12px;
     color: $textos;
 }
@@ -25,6 +25,7 @@
     background: #fff;
     border: 1px solid $bordas-footer;
     padding: 10px 20px 10px 21px;
+    min-height: 600px;
 
     h3 {
         color: orange;
@@ -36,17 +37,85 @@
 
     a {
        text-decoration: none;
-       display: inline-flex;
+   }
+
+   .title-nav {
+     color: $azul-padrao;
+     font-weight: bold;
+     padding: 10px 0px;
    }
 
 }
+
+//sidebar
+ul.principal {
+  background: red;
+  position: relative;
+  width: 200px;
+}
+
+ul.principal li {
+  list-style: none;
+  padding: 10px 0px;
+  margin: 0px 10px;
+  text-indent: 10px;
+
+}
+
+ul.principal a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.seta:before {
+  content: "> ";
+  color: orange;
+  font-weight: bold;
+  z-index: 99999;
+}
+
+/*sub menu*/
+ul.sub-menu  {
+
+}
+
+ul.sub-menu li {
+  display: none;
+}
+
+ul.sub-menu li {
+  display: none;
+}
+
+/*deu certo*/
+li:hover .sub-menu li {
+  display: block;
+}
+
+.title-nav:before {
+ content: ">";
+ font-size: 16px;
+ font-weight: bold;
+ color: orange;
+ float: left;
+ margin-right: 10px;
+ padding: 10px 0px;
+}
+
+
 
 .cats  {
   float: right;
 
   h3 {
-     border-bottom: 1px solid #333;
-     padding: 4px;
+     color: $rosa-padrao;
+     padding-bottom: 25px;
+     color: #ec007a;
+     border-bottom: 1px solid #eee;
  }
 
  img {
@@ -61,6 +130,19 @@
   padding: 40px 0px;
 }
 
+.banner-paes:before {
+    content: "Etiam sagittis nisi risus, vitae finibus ligula aliquam sit amet.";
+    position: absolute;
+    width: 700px;
+    background: rgba(0,0,0,0.7);
+    right: 143px;
+    margin-top: 163px;
+    padding: 11px 0px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
 //container intro
 .container-intro {
     height: auto;
@@ -70,13 +152,14 @@
        font-weight: 100;
        border-bottom: 1px solid #eee;
        padding-bottom: 20px;
+       color: $rosa-padrao;
    }
 
    p {
        line-height: 1.4;
-       padding: 10px 0px;
        color: $textos;
        padding-top: 20px;
+       font-size: 14px;
    }
 
 
@@ -84,15 +167,12 @@
 
 
 .caixa {
-    width: 200px;
     height: 150px;
     background: #fff;
     border: 1px solid $orange-padrao;
     text-align: center;
     font-size: 14px;
     padding: 16px 0px;
-    width: 217px;
-    height: 160px;
 
     p {
         max-width: 191px;
@@ -105,4 +185,9 @@
     width: 50px;
     display: block;
     margin: 5px auto;
+}
+
+aside.sidebar h4 {
+    font-weight: bold;
+    padding: 20px 0px 5px;
 }
