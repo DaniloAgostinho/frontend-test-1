@@ -1,0 +1,47 @@
+main {
+    max-width: 980px;
+    display: block;
+    margin: 50px auto;
+}
+
+legend {
+    text-align: center;
+    font-size: 26px;
+}
+
+fieldset p {
+    font-size: 16px;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    max-width: 580px;
+}
+
+fieldset input {
+    width: 95%;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    width: 27%;
+    float: right;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
