@@ -19,6 +19,7 @@
     //$telefone.addEventListener('input', callback);
     //botao
     $salvar.addEventListener('click', callback);
+    $salvar.addEventListener('click', requestFormulario);
 
 
 
@@ -47,38 +48,33 @@
 
         criaObjetoNomes();
 
+    }
 
-        function requestFormulario() {
-            var informacoes = {
-                "name": resultName,
-                "telefone": resultEmail,
-                "email": resultTelefone
-            };
+    function requestFormulario() {
+        var informacoes = {
+            "name": resultName,
+            "telefone": resultEmail,
+            "email": resultTelefone
+        };
 
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://localhost:3000/js/main.js', true);
-            xhr.send();
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/', true);
+        xhr.send();
 
-            xhr.addEventListener('readystatechange', rest);
-            var response = JSON.parse(xhr.responseText);
+        xhr.addEventListener('readystatechange', rest);
+        var response = JSON.parse(xhr.responseText);
 
-            function rest() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    var $insertName = doc.querySelector('.insertName');
-                    var $insertEmail = doc.querySelector('.insertEmail');
-                    var $insertTelefone = doc.querySelector('.insertTelefone');
+        function rest() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var $insertName = doc.querySelector('.insertName');
+                var $insertEmail = doc.querySelector('.insertEmail');
+                var $insertTelefone = doc.querySelector('.insertTelefone');
 
-                    $insertName.append(informacoes.name);
-                    $insertEmail.append(informacoes.telefone);
-                    $insertTelefone.append(informacoes.email);
-                }
+                $insertName.append(informacoes.name);
+                $insertEmail.append(informacoes.telefone);
+                $insertTelefone.append(informacoes.email);
             }
         }
-
-        requestFormulario();
-
-
-
     }
 
 
