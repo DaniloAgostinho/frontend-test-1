@@ -5,24 +5,28 @@ footer {
     background: $header;
 
     h4 {
-      font-size: 20px;
-      font-weight: 400;
-      color: #ddd;
+        font-size: 20px;
+        font-weight: 400;
+        color: #898989;
     }
-    h5 {font-weight: 700; font-size: 16px; padding: 20px 0px;}
+
+    h5 {
+        font-weight: 700;
+        font-size: 16px;
+        padding: 20px 0;
+    }
 
     a {
-      text-decoration: none;
-      line-height: 2.3;
-      font-size: 13px;
-      font-weight: 400;
+        text-decoration: none;
+        line-height: 2.3;
+        font-size: 13px;
+        font-weight: 400;
     }
 }
 
 .logo {
     padding-bottom: 30px;
 }
-
 //footer
 .logo h4 {
     padding-bottom: 30px;
@@ -32,18 +36,20 @@ footer {
     font-weight: bold;
     color: #333;
     border-bottom: 1px solid #ddd;
-    padding: 14px 0px 25px;
+    padding: 14px 0 25px;
 
- a {
-    text-decoration: underline;
-    color: #333;
-    font-weight: 700;
-    font-size: 13px;
+    a {
+        text-decoration: underline;
+        color: #333;
+        font-weight: 700;
+        font-size: 13px;
+    }
 
-  }
-
-  a:before {content: " >";position: absolute;margin-left: 68px;}
-
+    a:before {
+        content: " >";
+        position: absolute;
+        margin-left: 68px;
+    }
 }
 
 ul.nav-footer-left {
@@ -51,24 +57,31 @@ ul.nav-footer-left {
     float: left;
     position: relative;
     top: 20px;
+
     a {
         text-decoration: none;
         float: left;
         color: $textos;
-        padding: 0px 15px;
+        padding: 0 15px;
         font-weight: 600;
         font-size: 13px;
     }
 
     li {
-      border-right: 1px solid #ccc;
+        border-right: 1px solid #ccc;
     }
 
     li:last-child {
-      border-right: 0px;
+        border-right: 0;
     }
+}
 
+.nav-esquerda2 {
+    margin-top: 24px;
+}
 
+nav.nav-esquerda2 h5 {
+    padding-bottom: 60px;
 }
 
 ul.nav-footer-right {
@@ -76,27 +89,28 @@ ul.nav-footer-right {
     float: right;
     position: relative;
     top: 20px;
+
     a {
         text-decoration: none;
         float: left;
         color: $textos;
-        padding: 0px 15px;
+        padding: 0 15px;
         font-weight: 600;
         font-size: 13px;
     }
 
     li {
-      border-right: 1px solid #ccc;
+        border-right: 1px solid #ccc;
     }
 
     li:last-child {
-      border-right: 0px;
+        border-right: 0;
     }
 }
 
 .copy {
     width: 100%;
-    padding: 30px 0 80px;
+    padding: 30px 0 60px;
     background: $bordas-footer;
 
     span {
@@ -108,6 +122,4 @@ ul.nav-footer-right {
         line-height: 1.4;
         color: $textos;
     }
-
-
 }

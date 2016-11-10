@@ -1,3 +1,4 @@
+//container principal
 
 .wrapper {
     display: block;
@@ -5,33 +6,35 @@
     max-width: 960px;
     padding-bottom: 80px;
 }
+//Breadcrumb
 
 .links {
     width: 51%;
     height: auto;
     float: left;
     display: block;
-    padding: 5px 0px;
+    padding: 5px 0;
     font-size: 16px;
     font-weight: 400;
     color: $textos;
-    margin: 0px -15px;
+    margin: 0 -15px;
 }
-
+//container de slider e imagem paisaisagem
 
 .multmidia {
     height: auto;
-    padding: 40px 0px;
+    padding: 40px 0;
 }
+//slideShow Jquery.Cycle2
 
 .slider {
     width: 700px;
     height: 245px;
     background: red;
 }
+//Sidebar direita
 
 .sidebar {
-    background: #fff;
     border: 1px solid $bordas-footer;
     padding: 10px 20px 10px 21px;
     width: 220px;
@@ -46,156 +49,140 @@
     }
 
     a {
-       text-decoration: none;
-   }
+        text-decoration: none;
+    }
 
-   .title-nav {
-     color: $azul-padrao;
-   }
-
+    .title-nav {
+        color: $azul-padrao;
+    }
 }
-
-//sidebar
+//nav sidebar================================================================
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 ul#menu {
-	width: 170px;
-	margin-top: 20px;
+    width: 170px;
+    margin-top: 20px;
 }
 
 ul#menu li {
-	line-height: 19px;
+    line-height: 19px;
 }
 
 ul#menu li.header {
-	font-weight: bolder;
-	padding: 0px 3px;
-	font-size: 12px;
+    font-weight: bold;
+    padding: 0 3px;
+    font-size: 12px;
 }
 
 ul#menu li a {
-	color: $azul-padrao;
-	text-decoration: none;
-	display: block;
-	padding: 10px 3px;
-  margin-left: 10px;
-	outline: none;
-  font-weight: 900;
+    color: blue;
+    text-decoration: none;
+    display: block;
+    padding: 10px 3px;
+    margin-left: 10px;
+    outline: none;
+    font-weight: 900;
+    font-size: 14px;
 }
 
 ul#menu li a:before {
-  content: "> ";
-  position: absolute;
-  text-indent: -12px;
-  color: orange;
+    content: "> ";
+    position: absolute;
+    text-indent: -12px;
+    color: orange;
 }
-
-ul#menu li.parent > a {
-	background: transparent url('../img/down.gif') right center no-repeat;
-}
-
-ul#menu li.aberto > a {
-	background: transparent url('../img/up.gif') right center no-repeat;
-}
-
 
 ul#menu li ul.sub-menu {
-  	display: none;
+    display: none;
 }
 
 ul#menu li ul.sub-menu li a {
-  font-size: 14px;
-  font-weight: 400;
-  color: $textos;
-  padding: 1px 3px;
-
+    font-size: 14px;
+    font-weight: 400;
+    color: $textos;
+    padding: 1px 3px;
 }
 
 ul#menu li ul.sub-menu li a:before {
-  content: "";
+    content: "";
 }
 
 .title-nav:before {
- content: ">";
- font-size: 16px;
- font-weight: bold;
- color: orange;
- float: left;
- margin-right: 10px;
- padding: 10px 0px;
+    content: ">";
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+    float: left;
+    margin-right: 10px;
+    padding: 10px 0;
 }
+//end nav sidebar================================================================
 
+.cats {
+    float: right;
 
-.cats  {
-  float: right;
+    h3 {
+        font-weight: 300;
+        font-size: 20px;
+        color: $rosa-padrao;
+        padding-bottom: 20px;
+        color: #ec007a;
+        border-bottom: 1px solid #eee;
+    }
 
-  h3 {
-    font-weight: 300;
-    font-size: 20px;
-     color: $rosa-padrao;
-     padding-bottom: 20px;
-     color: #ec007a;
-     border-bottom: 1px solid #eee;
- }
-
- img {
-     margin-top: 20px;
-     border-radius: 10px;
-
- }
+    img {
+        margin-top: 20px;
+        border-radius: 10px;
+    }
 }
 
 .banner-paes {
-  float: left;
-  padding: 40px 0px;
+    float: left;
+    padding: 40px 0;
 }
 
 .banner-paes:before {
     content: "Etiam sagittis nisi risus, vitae finibus ligula aliquam sit amet.";
     position: absolute;
-        width: 700px;
-        background: rgba(0,0,0,0.7);
-        right: 143px;
-        margin-top: 163px;
-        padding: 11px 0px;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 600;
-        text-align: center;
+    width: 700px;
+    background: rgba(0,0,0,0.7);
+    right: 143px;
+    margin-top: 163px;
+    padding: 11px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
 }
-
 //container intro
 .container-intro {
     height: auto;
 
     h3 {
-       font-size: 20px;
-       font-weight: 300;
-       border-bottom: 1px solid #eee;
-       padding-bottom: 20px;
-       color: $rosa-padrao;
-   }
+        font-size: 20px;
+        font-weight: 300;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+        color: $rosa-padrao;
+    }
 
-   p {
-       line-height: 1.5;
-       font-weight: 400;
-       font-size: 16px;
-       color: $textos;
-       padding-top: 20px;
-   }
-
-
+    p {
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 16px;
+        color: $textos;
+        padding-top: 20px;
+    }
 }
-
 
 .caixa {
     height: 160px;
     background: #fff;
     border: 1px solid $orange-padrao;
     text-align: center;
-    padding: 16px 0px;
+    padding: 16px 0;
 
     p {
         font-size: 14px;
@@ -209,11 +196,11 @@ ul#menu li ul.sub-menu li a:before {
 .caixas img {
     width: 50px;
     display: block;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-bottom: 15px;
 }
 
 aside.sidebar h4 {
     font-weight: bold;
-    padding: 20px 0px 5px;
+    padding: 20px 0 5px;
 }

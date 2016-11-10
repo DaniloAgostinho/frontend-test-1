@@ -1,11 +1,13 @@
+//configurações globais
 @import "_reset";
 @import "_mixins";
 @import "_global";
 @import "_grid";
-@import "_fonts";
 
-//paginas
+//inlude paginas
 @import "_header";
 @import "_content";
-@import "_slideShow";
 @import "_footer";
+
+//slider
+@import "_slideShow";
