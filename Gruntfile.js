@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 
             javascript: {
                 files: {
-                    'build/js/main.min.js': ['dev/js/main.js']
+                    'build/js/main.min.js': ['src/js/main.js']
                 }
             }
         }, // uglify
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'build/css/style.min.css': 'dev/sass/style.scss'
+                    'build/css/style.min.css': 'src/sass/style.scss'
                 }
             }
         }, // sass
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         copyto: {
             stuff: {
                 files: [{
-                    cwd: 'dev/',
+                    cwd: 'src/',
                     src: ['index.html'],
                     dest: 'build/',
                     expand: true
@@ -47,9 +47,9 @@ module.exports = function(grunt) {
         watch: {
             dist: {
                 files: [
-                    'dev/js/**/*',
-                    'dev/sass/**/*',
-                    'dev/**.html'
+                    'src/js/**/*',
+                    'src/sass/**/*',
+                    'src/**.html'
                 ],
 
                 tasks: ['uglify', 'sass', 'copyto']
