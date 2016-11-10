@@ -13,6 +13,7 @@
     padding: 5px 0px;
     font-size: 12px;
     color: $textos;
+    margin: 0px -15px;
 }
 
 
@@ -21,11 +22,18 @@
     padding: 40px 0px;
 }
 
+.slider {
+    width: 700px;
+    height: 245px;
+    background: red;
+}
+
 .sidebar {
     background: #fff;
     border: 1px solid $bordas-footer;
     padding: 10px 20px 10px 21px;
-    min-height: 600px;
+    width: 220px;
+    min-height: 497px;
 
     h3 {
         color: orange;
@@ -48,52 +56,67 @@
 }
 
 //sidebar
-ul.principal {
-  background: red;
-  position: relative;
-  width: 200px;
+ul {
+	list-style: none;
 }
 
-ul.principal li {
-  list-style: none;
-  padding: 10px 0px;
-  margin: 0px 10px;
-  text-indent: 10px;
-
+ul#menu {
+	width: 170px;
+	margin-top: 20px;
 }
 
-ul.principal a {
-  color: #fff;
-  text-decoration: none;
-  list-style: none;
-  font-family: "Arial";
-  font-size: 14px;
-  font-weight: bold;
+ul#menu li {
+	color: black;
+	line-height: 19px;
 }
 
-.seta:before {
+ul#menu li.header {
+	background: #DFDFDF;
+	font-weight: bolder;
+	padding: 0px 3px;
+	font-size: 12px;
+}
+
+ul#menu li a {
+	color: $azul-padrao;
+	text-decoration: none;
+	display: block;
+	padding: 10px 3px;
+  margin-left: 10px;
+	outline: none;
+  font-weight: 900;
+}
+
+ul#menu li a:before {
   content: "> ";
+  position: absolute;
+  text-indent: -12px;
   color: orange;
-  font-weight: bold;
-  z-index: 99999;
 }
 
-/*sub menu*/
-ul.sub-menu  {
-
+ul#menu li.parent > a {
+	background: transparent url('../img/down.gif') right center no-repeat;
 }
 
-ul.sub-menu li {
-  display: none;
+ul#menu li.aberto > a {
+	background: transparent url('../img/up.gif') right center no-repeat;
 }
 
-ul.sub-menu li {
-  display: none;
+ul#menu li a:hover {
+	background-color: #EAEEFF;
 }
 
-/*deu certo*/
-li:hover .sub-menu li {
-  display: block;
+ul#menu li ul.sub-menu {
+  	display: none;
+}
+
+ul#menu li ul.sub-menu li a {
+  font-size: 12px;
+  color: $textos;
+}
+
+ul#menu li ul.sub-menu li a:before {
+  content: "";
 }
 
 .title-nav:before {
@@ -133,14 +156,14 @@ li:hover .sub-menu li {
 .banner-paes:before {
     content: "Etiam sagittis nisi risus, vitae finibus ligula aliquam sit amet.";
     position: absolute;
-    width: 700px;
-    background: rgba(0,0,0,0.7);
-    right: 143px;
-    margin-top: 163px;
-    padding: 11px 0px;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
+        width: 700px;
+        background: rgba(0,0,0,0.7);
+        right: 204px;
+        margin-top: 162px;
+        padding: 11px 0px;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
 }
 
 //container intro

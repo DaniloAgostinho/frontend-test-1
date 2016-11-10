@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teste Front-end - Amil</title>
 
+
     <!--incluir favicons-->
 
     <!--incluir Google web fonts-->
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 
 </head>
 
@@ -37,7 +39,7 @@
                 </nav>
             </div>
             <div class="grid-1">
-                <button class="btn">Interdum</button>
+                <div class="btn">Interdum</div>
             </div>
 
             <!--os links das seções já estão organizados-->
@@ -53,24 +55,74 @@
 
         <!--criar o carrusel em javascript-->
         <section class="multmidia">
-            <div class="grid-10">
-                <div class="slider">
-                    <img src="../imagens/city-700x245.jpg" alt="">
-                </div>
-            </div>
-            <div class="grid-2">
-                <div class="nav-bar">
-                    <img src="../imagens/nature-220x250.jpg" alt="">
-                </div>
-            </div>
-        </section>
+               <div class="grid-10">
+                   <div class="slider">
+
+                     <div class="cycle-slideshow" data-cycle-fx=scrollHorz data-cycle-timeout=2000>
+
+                       <!-- empty element for pager links -->
+                       <div class="cycle-pager"></div>
+
+
+                     <img src="../imagens/city-700x245.jpg">
+                     <img src="../imagens/city-700x245.jpg">
+                     <img src="../imagens/city-700x245.jpg">
+                  </div>
+
+                   </div>
+
+
+
+               </div>
+               <div class="grid-2">
+                   <div class="nav-bar">
+                       <img src="../imagens/nature-220x250.jpg" alt="">
+                   </div>
+               </div>
+           </section>
 
         <!--trabalhar no content-->
         <section class="content">
             <div class="grid-3">
                 <aside class="sidebar">
                     <h3>Áestigun</h3>
-                  
+                    <ul id="menu">
+                    	<li class="parent"><a href="#" title="">Vestibulum</a>
+                    		<ul class="sub-menu">
+                    			<li><a href="#" title="">Vestibulum ultrices</a></li>
+                    			<li><a href="#" title="">Erat egestas</a></li>
+                    			<li><a href="#" title="">Varius felis sed</a></li>
+                    		</ul>
+                    	</li>
+                      <li class="parent"><a href="#" title="">Áestibuçum</a>
+                        <ul class="sub-menu">
+                          <li><a href="#" title="">Vestibulum ultrices</a></li>
+                          <li><a href="#" title="">Erat egestas</a></li>
+                          <li><a href="#" title="">Varius felis sed</a></li>
+                        </ul>
+                      </li>
+                    	<li class="parent"><a href="#" title="">Vestibulum</a>
+                    		<ul class="sub-menu">
+                          <li><a href="#" title="">Vestibulum ultrices</a></li>
+                          <li><a href="#" title="">Erat egestas</a></li>
+                          <li><a href="#" title="">Varius felis sed</a></li>
+                    		</ul>
+                    	</li>
+                    	<li class="parent"><a href="#" title="">Áestibuçum </a>
+                    		<ul class="sub-menu">
+                    			<li><a href="#" title="">Vestibulum</a></li>
+                    			<li><a href="#" title="">Vestibulum ultrices</a></li>
+                    			<li><a href="#" title="">Erat egestas</a></li>
+                    		</ul>
+                    	</li>
+                    	<li class="parent"><a href="#" title="">Vestibulum </a>
+                    		<ul class="sub-menu">
+                    			<li><a href="#" title="">Vestibulum ultrices</a></li>
+                    			<li><a href="#" title="">Erat egestas</a></li>
+                    		</ul>
+                    	</li>
+                </ul>
+
                 </aside>
             </div>
 
@@ -180,12 +232,12 @@
             <div class="sub-footer">
                 <div class="grid-4">
                     <ul>
-                        <li><a href="">All things ></a></li>
+                        <li><a href="">All things</a></li>
                     </ul>
                 </div>
                 <div class="grid-4">
                     <ul>
-                        <li><a href="">All things ></a></li>
+                        <li><a href="">All things</a></li>
                     </ul>
                 </div>
             </div>
@@ -216,7 +268,10 @@
         <span>9999©Ut urna ligula, pretium ut elit dapibus, ornare tempus leo. Suspendisse augue massa Donec in maximus metus. suspendisse volutpat ornare congue.</span>
     </div>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
     <script src="js/main.min.js"></script>
+
 </body>
 
 </html>

@@ -26,32 +26,41 @@ header {
     height: auto;
 
     img {
-        max-width: 100%;
         width: 130px;
         height: 100px;
         background: #fff;
         -webkit-box-shadow: 0 0 10px 0 #000000;
         box-shadow: 0 0 10px 0 rgb(174, 165, 165);
         opacity: 15;
+        width: 112px;
+       height: 88px
     }
 }
 
 
-button.btn {
-    display: block;
+.btn {
     background: $orange-padrao;
+    display: block;
     border: 0;
-    width: 150px;
+    width: 142px;
     font-weight: bold;
     font-size: 16px;
     color: #fff;
     height: 25px;
     margin: 14px 0;
     border-radius: 5px;
+    line-height: 1.5;
+    text-indent: 15px;
+    padding-left: 12px;
+    cursor: pointer;
 }
+
+.btn:before {content: ">";position: absolute; font-size: 18px;top: 11px;font-weight: 900; margin-left: 77px;}
 
 ul.nav {
     margin: 8px 0;
+    margin: 8px -25px;
+    float: left;
 
     li {
         display: inline;
@@ -71,6 +80,7 @@ ul.nav {
         margin: 10px 11px 11px;
     }
 }
+
 
 ol.breadcrumb {
     display: inline-flex;
