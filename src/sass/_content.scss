@@ -1,3 +1,4 @@
+
 .wrapper {
     display: block;
     margin: 0 auto;
@@ -11,7 +12,8 @@
     float: left;
     display: block;
     padding: 5px 0px;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 400;
     color: $textos;
     margin: 0px -15px;
 }
@@ -33,7 +35,7 @@
     border: 1px solid $bordas-footer;
     padding: 10px 20px 10px 21px;
     width: 220px;
-    min-height: 497px;
+    min-height: 580px;
 
     h3 {
         color: orange;
@@ -49,8 +51,6 @@
 
    .title-nav {
      color: $azul-padrao;
-     font-weight: bold;
-     padding: 10px 0px;
    }
 
 }
@@ -66,12 +66,10 @@ ul#menu {
 }
 
 ul#menu li {
-	color: black;
 	line-height: 19px;
 }
 
 ul#menu li.header {
-	background: #DFDFDF;
 	font-weight: bolder;
 	padding: 0px 3px;
 	font-size: 12px;
@@ -102,17 +100,17 @@ ul#menu li.aberto > a {
 	background: transparent url('../img/up.gif') right center no-repeat;
 }
 
-ul#menu li a:hover {
-	background-color: #EAEEFF;
-}
 
 ul#menu li ul.sub-menu {
   	display: none;
 }
 
 ul#menu li ul.sub-menu li a {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 400;
   color: $textos;
+  padding: 1px 3px;
+
 }
 
 ul#menu li ul.sub-menu li a:before {
@@ -130,13 +128,14 @@ ul#menu li ul.sub-menu li a:before {
 }
 
 
-
 .cats  {
   float: right;
 
   h3 {
+    font-weight: 300;
+    font-size: 20px;
      color: $rosa-padrao;
-     padding-bottom: 25px;
+     padding-bottom: 20px;
      color: #ec007a;
      border-bottom: 1px solid #eee;
  }
@@ -158,11 +157,12 @@ ul#menu li ul.sub-menu li a:before {
     position: absolute;
         width: 700px;
         background: rgba(0,0,0,0.7);
-        right: 204px;
-        margin-top: 162px;
+        right: 143px;
+        margin-top: 163px;
         padding: 11px 0px;
         color: #fff;
         font-size: 16px;
+        font-weight: 600;
         text-align: center;
 }
 
@@ -172,17 +172,18 @@ ul#menu li ul.sub-menu li a:before {
 
     h3 {
        font-size: 20px;
-       font-weight: 100;
+       font-weight: 300;
        border-bottom: 1px solid #eee;
        padding-bottom: 20px;
        color: $rosa-padrao;
    }
 
    p {
-       line-height: 1.4;
+       line-height: 1.5;
+       font-weight: 400;
+       font-size: 16px;
        color: $textos;
        padding-top: 20px;
-       font-size: 14px;
    }
 
 
@@ -190,24 +191,26 @@ ul#menu li ul.sub-menu li a:before {
 
 
 .caixa {
-    height: 150px;
+    height: 160px;
     background: #fff;
     border: 1px solid $orange-padrao;
     text-align: center;
-    font-size: 14px;
     padding: 16px 0px;
 
     p {
-        max-width: 191px;
+        font-size: 14px;
+        font-weight: 300;
+        width: 160px;
         display: block;
-        margin: 16px auto;
+        margin: 0 auto;
     }
 }
 
 .caixas img {
     width: 50px;
     display: block;
-    margin: 5px auto;
+    margin: 0px auto;
+    padding-bottom: 15px;
 }
 
 aside.sidebar h4 {

@@ -6,13 +6,10 @@
 }
 
 body {
-    //color: $textos;
-    //background-color: $rosa-padrao;
     font-family: 'Open Sans', sans-serif;
 }
 
 .top-block {
-    border-top: 4px solid $orange-padrao;
     width: 100%;
     background: #eee;
     position: absolute;
@@ -26,36 +23,16 @@ header {
     height: auto;
 
     img {
-        width: 130px;
-        height: 100px;
         background: #fff;
         -webkit-box-shadow: 0 0 10px 0 #000000;
         box-shadow: 0 0 10px 0 rgb(174, 165, 165);
         opacity: 15;
         width: 112px;
-       height: 88px
+        height: 88px
     }
 }
 
 
-.btn {
-    background: $orange-padrao;
-    display: block;
-    border: 0;
-    width: 142px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #fff;
-    height: 25px;
-    margin: 14px 0;
-    border-radius: 5px;
-    line-height: 1.5;
-    text-indent: 15px;
-    padding-left: 12px;
-    cursor: pointer;
-}
-
-.btn:before {content: ">";position: absolute; font-size: 18px;top: 11px;font-weight: 900; margin-left: 77px;}
 
 ul.nav {
     margin: 8px 0;
@@ -75,11 +52,31 @@ ul.nav {
         font-weight: 900;
         margin: 10px 7px 9px;
         display: block;
-        font-size: 14px;
+        font-weight: 700;
         color: $textos;
-        margin: 10px 11px 11px;
+        margin: 6px 11px 11px;
+        font-size: 14px;
     }
 }
+
+.btn {
+    background: $orange-padrao;
+    display: block;
+    border: 0;
+    width: 142px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    height: 25px;
+    margin: 9px 0;
+    border-radius: 5px;
+    line-height: 1.5;
+    text-indent: 15px;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.btn:before {content: ">";position: absolute; font-size: 18px;top: 7px;font-weight: 900; margin-left: 82px;}
 
 
 ol.breadcrumb {
@@ -88,6 +85,8 @@ ol.breadcrumb {
 
 li.breadcrumb-item {
     margin: 0 1px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .nav-bar img {
