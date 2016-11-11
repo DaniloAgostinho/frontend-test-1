@@ -81,7 +81,12 @@
             "email": resultTelefone
         };
 
-        var xhr = new XMLHttpRequest();
+        // Old compatibility code, no longer needed.
+        if (window.XMLHttpRequest) { // Mozilla, Safari, IE7+ ...
+            xhr = new XMLHttpRequest();
+        } else if (window.ActiveXObject) { // IE 6 and older
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
         xhr.open('GET', '/', true);
         xhr.send();
 
@@ -128,6 +133,8 @@
              }
        }
 });
+
+
 
 
 
