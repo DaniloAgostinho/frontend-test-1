@@ -1,46 +1,51 @@
-main {
-    max-width: 980px;
-    display: block;
-    margin: 50px auto;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-legend {
-    text-align: center;
-    font-size: 26px;
+h1 {
+    font-weight: 500;
+    font-size: 30px;
 }
 
-fieldset p {
-    font-size: 16px;
+h2 {
+    font-weight: 300;
+    font-size: 18px;
 }
 
-form {
+.wrapper, .tabela {
+    width: 500px;
     display: block;
     margin: 0 auto;
-    max-width: 580px;
+    text-align: center;
+    padding-top: 40px;
 }
 
-fieldset input {
-    width: 95%;
+input[type=text],
+input[type=email],
+input[type=tel] {
+  border: 0px;
+  width: 70%;
+  height: 50px;
+  background: #f8f8f8;
+  padding-left: 20px;
+}
+
+input[type=submit] {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+
     padding: 10px;
+    width: 100px;
 }
 
-input[type="submit"] {
-    width: 27%;
-    float: right;
+.error{ color:red; font-weight: 500; }
+label {
+    position: absolute;
+    line-height: 3;
+    text-indent: 10px;
+    font-size: 15px;
 }
-
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
+.success{ color:green;}
 
 tr:nth-child(even) {
     background-color: #dddddd;

@@ -7,41 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fomulário de Cadastro - Teste Front-end Amil</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
 </head>
 
 <body>
-    <main>
-        <form method="get">
-            <fieldset>
-                <legend>Segundo desafio - Formulário de cadastro</legend>
-                <p>
-                    <input type="text" name="size" id="nome" placeholder="Digite seu nome" required/>
-                </p>
-                <p>
-                    <input type="tel" placeholder="Digite seu telefone" id="telefone" required/>
-                </p>
-                <p>
-                    <input type="email" name="size" id="email" placeholder="Digite seu E-mail" required/>
-                </p>
-
-                <input type="button" id="salvar" value="salvar">
-                <input type="button" id="cancelar" value="cancelar">
-            </fieldset>
+    <div class="wrapper">
+        <hgroup>
+            <h1>Cadastre-se</h1>
+            <h2>Informe seus dados</h2>
+        </hgroup>
+        <form method="get" id="">
+            <p>
+              <label for="nome"></label>
+              <input name="nome" minlength="2" type="text" name="size" id="nome" placeholder="Digite seu nome"required="required" />
+            </p>
+            <p>
+              <label for="telefone"></label>
+              <input  name="telefone" type="tel"  placeholder="Digite seu telefone" id="telefone" required="required" />
+            </p>
+            <p>
+              <label for="email"></label>
+              <input  name="email" type="email" name="size" id="email" placeholder="Digite seu E-mail" required="required" />
+            </p>
+            <input type="submit" id="salvar" value="salvar">
+            <input type="submit" id="cancelar" value="cancelar">
         </form>
 
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>Telefone</th>
-                <th>E-mail</th>
-            </tr>
-            <tr>
-                <td class="insertName"></td>
-                <td class="insertTelefone"></td>
-                <td class="insertEmail"></td>
-            </tr>
-        </table>
-    </main>
+        <h3>Lista de contatos</h3>
+
+
+    <div class="tabela">
+      <table>
+          <tr>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>E-mail</th>
+          </tr>
+          <tr>
+              <td class="insertName"></td>
+              <td class="insertTelefone"></td>
+              <td class="insertEmail"></td>
+          </tr>
+      </table>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script  src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
     <script src="js/main.js"></script>
 </body>
 
