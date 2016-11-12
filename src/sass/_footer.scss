@@ -52,11 +52,17 @@ footer {
     }
 }
 
+.nav-esquerda {
+    width: 200px;
+    margin-left: 20px;
+}
+
 ul.nav-footer-left {
     display: inline-flex;
     float: left;
     position: relative;
     top: 20px;
+
 
     a {
         text-decoration: none;
@@ -78,6 +84,7 @@ ul.nav-footer-left {
 
 .nav-esquerda2 {
     margin-top: 24px;
+
 }
 
 nav.nav-esquerda2 h5 {
