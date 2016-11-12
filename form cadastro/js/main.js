@@ -4,6 +4,7 @@
     var $nome = doc.getElementById('nome');
     var $email = doc.getElementById('email');
     var $telefone = doc.getElementById('telefone');
+    var $inputs = doc.querySelectorAll('input');
 
     //botoes do formulario
     var $salvar = doc.getElementById('salvar');
@@ -21,6 +22,7 @@
     //botao
     $salvar.addEventListener('click', callback);
     $salvar.addEventListener('click', requestFormulario);
+    $cancelar.addEventListener('click', resetFormulario);
 
 
 
@@ -83,35 +85,9 @@
         }
     }
 
-    //validação
-    $("#validacao").validate({
-       rules : {
-             nome:{
-                    required:true,
-                    minlength:3
-             },
-             telefone:{
-                    required:true
-             },
-             email:{
-                    required:true
-             }
-       },
-       messages:{
-             nome:{
-                    required:"Por favor, informe seu nome!",
-                    minlength:"O nome deve ter pelo menos 3 caracteres"
-             },
-             telefone:{
-                    required:"Este aceita apenas digitos"
-             },
-             email:{
-                    required:"Informe um email válido: tente usar o @"
-             }
-       }
-});
-
-
+    function resetFormulario() {
+      $inputs.value = '';
+    }
 
 
 
