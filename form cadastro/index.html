@@ -31,35 +31,37 @@
               <label for="email"></label>
               <input  name="email" type="email" id="email" placeholder="Digite seu E-mail" required />
             </p>
-            <input type="submit" id="salvar" value="salvar">
+            <input type="button" id="salvar" value="salvar">
             <input type="submit" class="submit" id="cancelar" value="cancelar">
         </form>
 
         <h3>Lista de contatos</h3>
 
 
-    <div class="tabela">
-      <table>
+    <div id="tabela">
+      <center>
+        <table style="width:100%">
           <tr>
-              <th>Nome</th>
-              <th>Telefone</th>
-              <th>E-mail</th>
+            <th>nome</th>
+            <th>fone</th>
+            <th>email</th>
           </tr>
           <tr>
-              <td class="insertName"></td>
-              <td class="insertTelefone"></td>
-              <td class="insertEmail"></td>
+            <td id="showNome"></td>
+            <td id="showTelefone"></td>
+            <td id="showEmail"></td>
           </tr>
-      </table>
-    </div>
+        </table>
+      </center>
+    </div><!--tabela-->
     </div>
 
 
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script  src="http://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
     <script  src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
-    <script  src="js/validaForm.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/validaForm.js"></script>
 </body>
 
 </html>

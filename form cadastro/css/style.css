@@ -30,7 +30,7 @@ input[type=tel] {
   padding-left: 20px;
 }
 
-input[type=button] {
+input[type=submit] {
     background: #f8f8f8;
     border: 1px solid #ddd;
 
@@ -46,6 +46,15 @@ label {
     font-size: 15px;
 }
 .success{ color:green;}
+
+table {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th, td {
+  text-align: center;
+}
 
 tr:nth-child(even) {
     background-color: #dddddd;
