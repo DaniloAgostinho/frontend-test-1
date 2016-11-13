@@ -6,6 +6,7 @@
     var $telefone = doc.getElementById('telefone');
     var $inputs = doc.querySelectorAll('input');
 
+
     //botoes do formulario
     var $salvar = doc.getElementById('salvar');
     var $cancelar = doc.getElementById('cancelar');

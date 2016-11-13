@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fomulário de Cadastro - Teste Front-end Amil</title>
@@ -21,18 +21,18 @@
         <form method="get" id="validacao">
             <p>
               <label for="nome"></label>
-              <input type="text" id="nome"  placeholder="Digite seu nome"/>
+              <input type="text" name="nome" minlength="2" id="nome"  placeholder="Digite seu nome" required/>
             </p>
             <p>
               <label for="telefone"></label>
-              <input class="phone" type="text"  placeholder="Digite seu telefone" id="telefone" required />
+              <input class="phone" name="telefone" type="text"  placeholder="Digite seu telefone" id="telefone" required />
             </p>
             <p>
               <label for="email"></label>
-              <input  name="email" type="email" name="size" id="email" placeholder="Digite seu E-mail" required />
+              <input  name="email" type="email" id="email" placeholder="Digite seu E-mail" required />
             </p>
             <input type="submit" id="salvar" value="salvar">
-            <input type="submit" id="cancelar" value="cancelar">
+            <input type="submit" class="submit" id="cancelar" value="cancelar">
         </form>
 
         <h3>Lista de contatos</h3>
@@ -57,6 +57,7 @@
 
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script  src="http://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+    <script  src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
     <script  src="js/validaForm.js"></script>
     <script src="js/main.js"></script>
 </body>
