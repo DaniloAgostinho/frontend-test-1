@@ -30,7 +30,7 @@ input[type=tel] {
   padding-left: 20px;
 }
 
-input[type=submit] {
+input[type=button] {
     background: #f8f8f8;
     border: 1px solid #ddd;
 
