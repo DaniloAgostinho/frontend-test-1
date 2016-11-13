@@ -14,15 +14,11 @@
       //event.preventDefault();
 
         function adicionaContatosLocalStorage() {
-          var xhr = new XMLHttpRequest();
-          xhr.open('GET', '/', true);
-          xhr.send();
 
             var filtroNome = $nome.value.trim();
             var filtroTelefone = $telefone.value.trim();
             var filtroEmail = $email.value.trim();
 
-            xhr.addEventListener('readystatechange', function() {
               //cria o array com os dados Digitados pelo usuário
               var dadosDigitados = {
                   nome: filtroNome,
@@ -45,7 +41,7 @@
               doc.getElementById('showNome').innerHTML = nomeRecuperado;
               doc.getElementById('showTelefone').innerHTML = telefoneRecuperado;
               doc.getElementById('showEmail').innerHTML = emailRecuperado;
-            }, false);
+
 
         };//add contanto
 

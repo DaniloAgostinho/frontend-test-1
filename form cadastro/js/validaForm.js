@@ -29,30 +29,3 @@ $('.phone').mask(maskBehavior, options);
 //});
 
 //*//
-
-$("#validacao").validate({
-       rules : {
-             nome:{
-                    required:true,
-                    minlength:3
-             },
-             telefone:{
-                    required:true
-             },
-             email:{
-                    required:true
-             }
-       },
-       messages:{
-             nome:{
-                    required:"Por favor, informe seu nome",
-                    minlength:"O nome deve ter pelo menos 3 caracteres"
-             },
-             telefone:{
-                    required:"O formato de Telefone aceito é: (xx) xxxx-xxxx"
-             },
-             email:{
-                    required:"Informe um E-mail válido"
-             }
-       }
-});
