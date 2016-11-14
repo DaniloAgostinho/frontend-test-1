@@ -10,7 +10,7 @@
 
 # Rodando o projeto
 
-Você precisara do **npm** para instalar as Dependência, caso não o possua em sua máquina, você precisa baixar e instalar o **nodejs**, acesse o link: [ofcial](https://nodejs.org/en/).
+Você precisara do **npm** para instalar as Dependências, caso não o possua em sua máquina, você precisa baixar e instalar o **nodejs**, acesse o link: [ofcial](https://nodejs.org/en/).
 
 1. Faça um Fork deste projeto
 
@@ -60,7 +60,7 @@ frontend-test-1 (dir)
 
 ## Grunt
 
-Este projeto utiliza **Gruntjs**, você precisa te-ô instalado globalmente rode o comando:
+Este projeto utiliza **Gruntjs**, você precisa dele rodando globalmente rode o comando:
 
 ```
 npm install -g grunt-cli
