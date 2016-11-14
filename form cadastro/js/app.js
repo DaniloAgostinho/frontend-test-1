@@ -6,8 +6,8 @@ app.controller("listaTelefonicaCtrl", function($scope) {
     $scope.app = "Lista Telefonica";
     $scope.contatos = [{
         nome: "Danilo",
-        telefone: "98898878",
-        email: "daniloagostinhosilva@gmail.com"
+        telefone: "(xx)xxxx-xxxx",
+        email: "danilodev.silva@gmail.com"
     }];
     $scope.operadoras = [{
         nome: "Oi",
