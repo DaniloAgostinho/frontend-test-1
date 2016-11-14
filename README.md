@@ -44,7 +44,7 @@ frontend-test-1 (dir)
   |_ packge.json
   |_ primeiro-desafio.md
   |_ segundo-desafio.md
-  |_ assets(dir)
+  |_ src(dir)
      |_ js (dir)
         | _ _ main.js
      |_ sass (dir)
