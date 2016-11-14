@@ -21,7 +21,7 @@ Você precisara do **npm** para instalar as Dependência, caso não o possua em 
 2. Entre no Diretorio do projeto
 
   ```
-  cd /frontend-test
+  cd frontend-test/
   ```
 
 3. Instale as Dependências rodando
@@ -81,15 +81,10 @@ Minifica os arquivos **JavaScript** e **Css** e cria a pasta **build** com os ar
 grunt prod
 ```
 
-Limpa a pasta a pasta build
-
-```
-grunt c
-```
 
 ## Testeando o projeto em vários Dispositivos
 
-Em na pasta buil do projeto:
+Entre na pasta buil do projeto:
 
 ```
 cd build/
