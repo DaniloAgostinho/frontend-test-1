@@ -3,9 +3,9 @@
 ## Informações sobre o candidato
 
 
-- nome: Danilo Agostinhoemail: 
-- danilodev.silva@gmail.comtwitter: 
-- @danilodevgithub: DaniloAgostinho
+- Nome: Danilo Agostinho: 
+- Email: danilodev.silva@gmail.com: 
+- Twitter: @danilodevgithub: DaniloAgostinho
 
 
 # Rodando o projeto
