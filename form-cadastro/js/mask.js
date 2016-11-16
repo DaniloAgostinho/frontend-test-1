@@ -11,3 +11,9 @@
 
     $('.phone').mask(maskBehavior, options);
 })();
+
+//campo noome
+
+jQuery('#nome').keyup(function () {
+    this.value = this.value.replace(/[^a-zA-Z.]/g,'');
+});
