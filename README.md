@@ -3,14 +3,14 @@
 ## Informações sobre o candidato
 
 
-- nome: Danilo Agostinhoemail: 
-- danilodev.silva@gmail.comtwitter: 
-- @danilodevgithub: DaniloAgostinho
+- Nome: Danilo Agostinho
+- Email: danilodev.silva@gmail.com
+- Twitter: @danilodev
 
 
 # Rodando o projeto
 
-Você precisara do **npm** para instalar as Dependência, caso não o possua em sua máquina, você precisa baixar e instalar o **nodejs**, acesse o link: [ofcial](https://nodejs.org/en/).
+Você precisara do **npm** para instalar as Dependências, caso não o possua em sua máquina, você precisa baixar e instalar o **nodejs**, acesse o link: [ofcial](https://nodejs.org/en/).
 
 1. Faça um Fork deste projeto
 
@@ -21,7 +21,7 @@ Você precisara do **npm** para instalar as Dependência, caso não o possua em 
 2. Entre no Diretorio do projeto
 
   ```
-  cd /frontend-test
+  cd frontend-test/
   ```
 
 3. Instale as Dependências rodando
@@ -60,7 +60,7 @@ frontend-test-1 (dir)
 
 ## Grunt
 
-Este projeto utiliza **Gruntjs**, você precisa te-ô instalado globalmente rode o comando:
+Este projeto utiliza **Gruntjs**, você precisa dele rodando globalmente rode o comando:
 
 ```
 npm install -g grunt-cli
@@ -81,15 +81,10 @@ Minifica os arquivos **JavaScript** e **Css** e cria a pasta **build** com os ar
 grunt prod
 ```
 
-Limpa a pasta a pasta build
-
-```
-grunt c
-```
 
 ## Testeando o projeto em vários Dispositivos
 
-Em na pasta buil do projeto:
+Entre na pasta buil do projeto:
 
 ```
 cd build/
